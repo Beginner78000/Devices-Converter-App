@@ -1,0 +1,19 @@
+@use 'src/styles/vars';
+
+.result {
+  background-color: vars.$lightColor;
+  color: vars.$primaryColor;
+  text-align: center;
+  padding: 2rem;
+
+  &__amount {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+
+  &__currency {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+}

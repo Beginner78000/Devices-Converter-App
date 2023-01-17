@@ -1,0 +1,32 @@
+@use 'reset';
+@use 'vars';
+// @font-face {
+//   font-family: 'Spartan';
+//   src: url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;500;700&display=swap');
+// }
+
+body {
+  background-color: vars.$altColor;
+  font-family: 'Spartan', sans-serif;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+html, body, #root {
+  height: 100%;
+}
+/* 
+  // or you can import your own font
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Regular.ttf');
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+*/

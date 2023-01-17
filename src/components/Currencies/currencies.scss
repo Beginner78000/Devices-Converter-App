@@ -1,0 +1,58 @@
+@use 'src/styles/vars';
+
+.currencies {
+  color: vars.$primaryColor;
+  background-color: vars.$lightColor;
+  height: 340px;
+  transition: height 0.5s;
+  overflow: hidden;
+
+  &--closed {
+    height: 0px;
+  }
+
+  &__title {
+    padding: 0.8rem;
+    font-weight: bold;
+  }
+
+  &__input {
+    background-color: white;
+    color: vars.$primaryColor;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.8rem;
+    display: block;
+    border: none;
+    width: 100%;
+  }
+
+  &__list {
+    overflow-y: scroll;
+    max-height: 250px;
+    scrollbar-color: vars.$primaryColor #ebebeb;
+    scrollbar-width: 10px;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+    &::-webkit-scrollbar-thumb { /* Foreground */
+      background: vars.$primaryColor;
+    }
+    &::-webkit-scrollbar-track { /* Background */
+      background: #ebebeb;
+    }
+
+    &__item {
+      border-top: 1px solid vars.$altColor;
+      padding: 0.8rem;
+      transition: background-color 1s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: vars.$altColor;
+        transition: background-color 1s;
+      }
+    }
+  }
+}

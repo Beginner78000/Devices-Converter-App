@@ -1,0 +1,24 @@
+@use 'src/styles/vars';
+
+.toggler {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: -25px auto;
+  background-color: vars.$lightColor;
+  font-size: 2em;
+  font-weight: bold;
+  border: 4px solid vars.$primaryColor;
+  color: vars.$primaryColor;
+  position: relative;
+  transition: transform 0.2s, background-color 0.2s;
+
+  &:hover {
+    background-color: vars.$altColor;
+  }
+
+  &--open {
+    transform: rotate(90deg);
+  }
+}
