@@ -32,6 +32,8 @@
     max-height: 250px;
     scrollbar-color: vars.$primaryColor #ebebeb;
     scrollbar-width: 10px;
+    list-style-type : none;
+    padding-inline-start: 10px;
 
     &::-webkit-scrollbar {
       width: 10px;
@@ -48,6 +50,7 @@
       padding: 0.8rem;
       transition: background-color 1s;
       cursor: pointer;
+      margin-right: 8px;
 
       &:hover {
         background-color: vars.$altColor;

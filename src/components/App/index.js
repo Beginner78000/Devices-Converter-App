@@ -3,12 +3,12 @@
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
 
-import Header from 'src/components/Header';
-import Currencies from 'src/components/Currencies';
-import Toggler from 'src/components/Toggler';
-import Result from 'src/components/Result';
+import Result from '../Result';
+import Header from '../Header';
+import Currencies from '../Currencies';
+import Toggler from '../Toggler';
 
-import currenciesList from 'src/data/currencies';
+import currenciesList from '../../data/currencies';
 
 import './app.scss';
 
@@ -45,11 +45,11 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    console.log('Le composant <App /> vient detre monté !');
+    console.log('Le composant <App /> vient d\'être monté !');
 
     // ici, je pourrai faire des choses, au moment ou le composant est chargé
     // initialement
-    document.title = `Conversion de euros vers ${this.state.selectedCurrency}`;
+    document.title = `Conversion des euros vers ${this.state.selectedCurrency}`;
   }
 
   // avec prevProps et prevState, je peux accéder aux
