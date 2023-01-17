@@ -10,3 +10,6 @@ README.md
 *.png
 *.gif
 
+
+# Local Netlify folder
+.netlify
