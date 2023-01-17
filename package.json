@@ -2,8 +2,7 @@
   "name": "converter",
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "react-scripts build",
-    "deploy": "gh-pages -b main -d build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
